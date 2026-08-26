@@ -1,0 +1,40 @@
+[project]
+name = "20260826lc"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "156505953@qq.com", email = "156505953@qq.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-openai>=0.2.0",
+    "langchain-core>=0.3.0",
+    "streamlit>=1.40.0",
+    "pillow>=11.0.0",
+    "python-dotenv>=1.0.0",
+    "tavily-python>=0.5.0",
+    "langchain-tavily>=0.1.0",
+    "fastapi>=0.109.0",
+    "uvicorn>=0.27.0",
+    "python-multipart>=0.0.6",
+    "alibabacloud-oss-v2>=1.2.4",
+    "langgraph-checkpoint-sqlite>=3.0.3",
+    "langgraph-cli[inmem]>=0.4.31",
+]
+
+[dependency-groups]
+dev = [
+  "pytest",
+  "ruff",
+]
+
+
+[project.scripts]
+20260826lc = "20260826lc:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
